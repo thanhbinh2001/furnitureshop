@@ -146,3 +146,29 @@
 .header-tool__item-cart a {
     color: #000;
 }
+
+/* breadcrumb start */
+#breadcrumb {
+    background-color: rgba(235, 217, 202, 0.8);
+    padding: 40px;
+}
+
+.breadcrumb-wrapper h4 {
+    font-size: 2rem;
+    line-height: 2;
+
+}
+
+.breadcrumb-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #000;
+}
+
+.breadcrumb-links span {
+    color: #b7b7b7;
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+
+/* breadcrumb end */
