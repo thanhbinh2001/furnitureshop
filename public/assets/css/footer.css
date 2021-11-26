@@ -149,7 +149,11 @@
     bottom: 50px;
     right: 40px;
     background-color: var(--main-color);
+}
+
+.footer-back a {
     color: #fff;
+    display: block;
     padding: 5px 14px;
     font-size: 2rem;
 }
