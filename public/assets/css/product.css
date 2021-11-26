@@ -15,23 +15,38 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    cursor: pointer;
 }
 
 .sidebar-item__heading i,
-.sidebar-item__heading h5 {
+.sidebar-item__heading label {
     font-size: 1.6rem;
     text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.sidebar-item__sublist.active {
+#category-check:checked~.sidebar-item__sublist {
     display: block;
 }
+
+#price-check:checked~.sidebar-item__sublist {
+    display: block;
+}
+
+#origin-check:checked~.sidebar-item__sublist {
+    display: block;
+}
+
+#material-check:checked~.sidebar-item__sublist {
+    display: block;
+}
+
 
 .sidebar-item__sublist {
     list-style: none;
     border-bottom: 1px solid #ccc;
     display: none;
+    animation: 3s linear 1s infinite running slidein;
 }
 
 .sidebar-item__sublist-item {}

@@ -12,14 +12,6 @@ headerClose.onclick = (e) => {
   headerInput.classList.add("active");
 };
 
-const sidebarItems = $$(".sidebar-item");
-const sidebarList = $(".sidebar-item__sublist");
-
-sidebarItems.forEach((sidebarItem) => {
-  sidebarItem.onclick = () => {
-    sidebarList.classList.toggle("active");
-  };
-});
 
 // slider start
 var sliderNumber = $$(".slider-item").length;
