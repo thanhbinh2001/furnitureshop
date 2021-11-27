@@ -19,6 +19,14 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
 #app,
 #header,
 #slider,
