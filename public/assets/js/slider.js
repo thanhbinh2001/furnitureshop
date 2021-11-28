@@ -1,11 +1,8 @@
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
 var sliderNumber = $$(".slider-item").length;
 var sliderCounter = 0;
 // var sliderWidth = $(".slider-item").clientWidth;
 var sliderWidth = 1200;
 var sliderList = $(".slider-list");
-
 // slider auto
 setInterval(() => {
   if (sliderCounter == sliderNumber - 1) {

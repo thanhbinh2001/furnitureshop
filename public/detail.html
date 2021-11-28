@@ -26,9 +26,8 @@
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/grid.css" />
-    <link rel="stylesheet" href="assets/css/slider.css" />
-    <link rel="stylesheet" href="assets/css/featured.css" />
     <link rel="stylesheet" href="assets/css/product.css" />
+    <link rel="stylesheet" href="assets/css/detail.css" />
     <link rel="stylesheet" href="assets/css/seller.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
   </head>
@@ -125,183 +124,216 @@
       </header>
       <!-- header end-->
 
-      <!-- slider start -->
-      <div id="slider">
+      <!-- breadcrumb start -->
+      <section id="breadcrumb">
         <div class="grid wide">
-          <div class="slider-wrapper">
-            <ul class="slider-list">
-              <li class="slider-item col l-12">
-                <div class="slider-item-left col l-5">
-                  <div class="slider-item-left__heading">
-                    <h1>Square Arm Loveseat</h1>
-                  </div>
-                  <div class="slider-item-left__description">
-                    <p>
-                      This adjustable Sarantino Sofa bed is composed of an easy
-                      to clean, durable and soft to touch faux velvet fabric,
-                      providing top-quality comfort with wooden legs and support
-                      while you sit
-                    </p>
-                  </div>
-                  <div class="slider-item-left__button">
-                    <a
-                      href="./detail.html"
-                      class="slider-item-left__button-link"
-                    >
-                      Buy now
-                    </a>
-                  </div>
+          <div class="row">
+            <div class="col l-12">
+              <div class="breadcrumb-wrapper">
+                <h4>Detail</h4>
+                <div class="breadcrumb-links">
+                  <p>Home <span>-</span> Detail</p>
                 </div>
-                <div class="slider-item-right col l-7">
-                  <img
-                    src="./assets/images/banner2.png"
-                    alt=""
-                    class="slider-item-right__img"
-                  />
-                </div>
-              </li>
-              <li class="slider-item col l-12">
-                <div class="slider-item-left col l-5">
-                  <div class="slider-item-left__heading">
-                    <h1>Square Arm Loveseat</h1>
-                  </div>
-                  <div class="slider-item-left__description">
-                    <p>
-                      This adjustable Sarantino Sofa bed is composed of an easy
-                      to clean, durable and soft to touch faux velvet fabric,
-                      providing top-quality comfort with wooden legs and support
-                      while you sit
-                    </p>
-                  </div>
-                  <div class="slider-item-left__button">
-                    <a
-                      href="./detail.html"
-                      class="slider-item-left__button-link"
-                    >
-                      Buy now
-                    </a>
-                  </div>
-                </div>
-                <div class="slider-item-right col l-7">
-                  <img
-                    src="./assets/images/banner2.png"
-                    alt=""
-                    class="slider-item-right__img"
-                  />
-                </div>
-              </li>
-              <li class="slider-item col l-12">
-                <div class="slider-item-left col l-5">
-                  <div class="slider-item-left__heading">
-                    <h1>Square Arm Loveseat</h1>
-                  </div>
-                  <div class="slider-item-left__description">
-                    <p>
-                      This adjustable Sarantino Sofa bed is composed of an easy
-                      to clean, durable and soft to touch faux velvet fabric,
-                      providing top-quality comfort with wooden legs and support
-                      while you sit
-                    </p>
-                  </div>
-                  <div class="slider-item-left__button">
-                    <a
-                      href="./detail.html"
-                      class="slider-item-left__button-link"
-                    >
-                      Buy now
-                    </a>
-                  </div>
-                </div>
-                <div class="slider-item-right col l-7">
-                  <img
-                    src="./assets/images/banner2.png"
-                    alt=""
-                    class="slider-item-right__img"
-                  />
-                </div>
-              </li>
-            </ul>
-            <div class="slider-control">
-              <div class="slider-control__next-btn"><span>Next</span></div>
-              <div class="slider-control__previous-btn">
-                <span>Previous</span>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- slider end -->
+      </section>
+      <!-- breadcrumb end -->
 
+      <!-- content start -->
       <div id="app-content">
-        <!-- featured start -->
-        <section class="featured" id="featured">
-          <h1 class="featured-heading">Featured Category</h1>
+        <!-- detail start -->
+        <section id="detail-product">
           <div class="grid wide">
-            <div class="row featured-wrapper">
+            <div class="row detail-product-wrapper">
               <div class="col l-7">
-                <div class="featured-content">
-                  <p>Category</p>
-                  <h3>Latest foam sofa</h3>
-                  <a href="" class="featured-btn">
-                    EXPLORE NOW
-                    <i class="fas fa-play"></i>
-                  </a>
-                  <img
-                    src="./assets/images/feature_1.png"
-                    alt=""
-                    class="featured-img"
-                  />
+                <div class="detail-product-img">
+                  <div class="detail-slider">
+                    <div class="detail-slider-wrapper">
+                      <input
+                        type="radio"
+                        name="detail-img"
+                        id="detail-img-1"
+                        hidden
+                        checked
+                      />
+                      <input
+                        type="radio"
+                        name="detail-img"
+                        id="detail-img-2"
+                        hidden
+                      />
+                      <input
+                        type="radio"
+                        name="detail-img"
+                        id="detail-img-3"
+                        hidden
+                      />
+                      <div class="detail-slider-pictures">
+                        <div class="detail-slider-picture">
+                          <img
+                            src="./assets/images/fallyn3_1.jpg"
+                            alt=""
+                            class="detail-slider-img"
+                          />
+                        </div>
+                        <div class="detail-slider-picture">
+                          <img
+                            src="./assets/images/fallyn3_1.jpg"
+                            alt=""
+                            class="detail-slider-img"
+                          />
+                        </div>
+                        <div class="detail-slider-picture">
+                          <img
+                            src="./assets/images/fallyn3_1.jpg"
+                            alt=""
+                            class="detail-slider-img"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="detail-slider-list">
+                      <li class="detail-slider-item">
+                        <label
+                          for="detail-img-1"
+                          class="detail-slider-item__link"
+                        >
+                          <img
+                            src="./assets/images/fallyn3_1.jpg"
+                            alt=""
+                            class="detail-slider-item__img"
+                          />
+                        </label>
+                      </li>
+                      <li class="detail-slider-item">
+                        <label
+                          for="detail-img-2"
+                          class="detail-slider-item__link"
+                        >
+                          <img
+                            src="./assets/images/fallyn3_1.jpg"
+                            alt=""
+                            class="detail-slider-item__img"
+                          />
+                        </label>
+                      </li>
+                      <li class="detail-slider-item">
+                        <label
+                          for="detail-img-3"
+                          class="detail-slider-item__link"
+                        >
+                          <img
+                            src="./assets/images/fallyn3_1.jpg"
+                            alt=""
+                            class="detail-slider-item__img"
+                          />
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="col l-5">
-                <div class="featured-content">
-                  <p>Category</p>
-                  <h3>Latest foam sofa</h3>
-                  <a href="" class="featured-btn">
-                    EXPLORE NOW
-                    <i class="fas fa-play"></i>
-                  </a>
-                  <img
-                    src="./assets/images/feature_2.png"
-                    alt=""
-                    class="featured-img"
-                  />
-                </div>
-              </div>
-              <div class="col l-5">
-                <div class="featured-content">
-                  <p>Category</p>
-                  <h3>Latest foam sofa</h3>
-                  <a href="" class="featured-btn">
-                    EXPLORE NOW
-                    <i class="fas fa-play"></i>
-                  </a>
-                  <img
-                    src="./assets/images/feature_3.png"
-                    alt=""
-                    class="featured-img"
-                  />
-                </div>
-              </div>
-              <div class="col l-7">
-                <div class="featured-content">
-                  <p>Category</p>
-                  <h3>Latest foam sofa</h3>
-                  <a href="" class="featured-btn">
-                    EXPLORE NOW
-                    <i class="fas fa-play"></i>
-                  </a>
-                  <img
-                    src="./assets/images/feature_4.png"
-                    alt=""
-                    class="featured-img"
-                  />
+              <div class="col l-4">
+                <div class="detail-product-text">
+                  <h3 class="detail-product-text__headding">
+                    Wilson Solid Wood Full Length Wall Mirror, 40 x 140cm, Oak
+                  </h3>
+                  <h2 class="detail-product-text__price">$139</h2>
+                  <ul class="detail-product-text__list">
+                    <li class="detail-product-text__item">
+                      <p class="col l-3">Category:</p>
+                      <span> Living room</span>
+                    </li>
+                    <li class="detail-product-text__item">
+                      <p class="col l-3">Availability:</p>
+                      <span> In stock</span>
+                    </li>
+                  </ul>
+
+                  <p>
+                    On the wall. Who's the fairest of them all? Wilson's classic
+                    good looks will never go out of favour in the lands.
+                  </p>
+
+                  <div class="detail-product-text__cart">
+                    <div class="detail-product-text__cart-count">
+                      <span class="detail-product-text__cart-count-decrement">
+                        <i class="fas fa-minus"></i>
+                      </span>
+                      <input
+                        type="text"
+                        name=""
+                        value="1"
+                        min="1"
+                        max="10"
+                        class="detail-product-text__cart-count-input"
+                      />
+                      <span class="detail-product-text__cart-count-increment">
+                        <i class="fas fa-plus"></i>
+                      </span>
+                    </div>
+                    <a href="" class="detail-product-text__cart-btn"
+                      >add to cart</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <!-- featured end -->
+        <!-- detail end -->
+
+        <!-- detail description start -->
+        <section class="detail-product-description">
+          <div class="grid wide">
+            <ul class="detail-product-tabs">
+              <li class="detail-product-tab active">Description</li>
+              <li class="detail-product-tab">Specification</li>
+            </ul>
+
+            <div class="detail-product-tabs-content">
+              <div class="detail-tab-pane active">
+                <p>
+                  Wow, Wilson - what a big mirror you are. All the better for
+                  creating a dramatic atmosphere.
+                </p>
+                <p>
+                  Our oversized Wilson mirror looks great leaning against a wall
+                  all relaxed. And can be wall-mounted, too.
+                </p>
+              </div>
+              <div class="detail-tab-pane">
+                <div class="row detail-tab-row">
+                  <div class="col l-6"><h5>Width</h5></div>
+                  <div class="col l-6"><h5>40cm</h5></div>
+                </div>
+                <div class="row detail-tab-row">
+                  <div class="col l-6"><h5>Weight</h5></div>
+                  <div class="col l-6"><h5>6 kg</h5></div>
+                </div>
+                <div class="row detail-tab-row">
+                  <div class="col l-6"><h5>Height</h5></div>
+                  <div class="col l-6"><h5>140 cm</h5></div>
+                </div>
+                <div class="row detail-tab-row">
+                  <div class="col l-6"><h5>Depth</h5></div>
+                  <div class="col l-6"><h5>5 m</h5></div>
+                </div>
+                <div class="row detail-tab-row">
+                  <div class="col l-6"><h5>Material</h5></div>
+                  <div class="col l-6"><h5>Mirror, Oak</h5></div>
+                </div>
+                <div class="row detail-tab-row">
+                  <div class="col l-6"><h5>Origin</h5></div>
+                  <div class="col l-6"><h5>UK</h5></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- detail description end -->
 
         <!-- seller start -->
         <section id="seller">
@@ -312,7 +344,9 @@
                   <h2>Best Seller</h2>
                 </div>
                 <div class="seller-control">
-                  <div class="seller-control__next-btn"><span>Next</span></div>
+                  <div class="seller-control__next-btn">
+                    <span>Next</span>
+                  </div>
                   <div class="seller-control__previous-btn">
                     <span>Previous</span>
                   </div>
@@ -410,9 +444,7 @@
                   </a>
                   <div class="product-item-detail">
                     <a href="./detail.html">
-                      <p class="product-item-heading">
-                        Multi-pocket Chest Bag
-                      </p>
+                      <p class="product-item-heading">Multi-pocket Chest Bag</p>
                     </a>
                     <div class="product-item-price">
                       <span class="product-item-amount">$50.21</span>
@@ -485,35 +517,9 @@
           </div>
         </section>
         <!-- seller end -->
-
-        <!-- subscribe start -->
-        <section id="subscribe">
-          <div class="grid wide">
-            <div class="row subscribe-wrapper">
-              <div class="col l-7">
-                <div class="subscribe-content">
-                  <h5>JOIN OUR NEWSLETTER</h5>
-                  <h2>Subscribe to get Updated with new offers</h2>
-                  <div class="subscribe-form">
-                    <input
-                      type="text"
-                      name="email"
-                      id=""
-                      placeholder="Enter Email Address"
-                      class="subscribe-control col l-8"
-                      style="height: 60px"
-                    />
-                    <button type="submit" class="subscribe-submit">
-                      Subscribe now
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- subscribe end -->
       </div>
+      <!-- content end -->
+
       <!-- footer start -->
       <footer id="footer">
         <div class="grid wide">
@@ -648,8 +654,8 @@
       <!-- footer end -->
     </div>
 
-    <script src="assets/js/header.js"></script>
-    <script src="assets/js/seller.js"></script>
-    <script src="assets/js/slider.js"></script>
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/seller.js"></script>
+    <script src="./assets/js/detail.js"></script>
   </body>
 </html>

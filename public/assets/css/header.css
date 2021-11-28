@@ -149,26 +149,30 @@
 
 /* breadcrumb start */
 #breadcrumb {
-    background-color: rgba(235, 217, 202, 0.8);
-    padding: 40px;
+    background-color: var(--bg-1-color);
+    padding: 10px;
+}
+
+.breadcrumb-wrapper {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .breadcrumb-wrapper h4 {
-    font-size: 2rem;
-    line-height: 2;
-
+    color: #222222;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: capitalize
 }
 
-.breadcrumb-link {
-    text-decoration: none;
-    font-size: 1.4rem;
-    color: #000;
-}
-
-.breadcrumb-links span {
-    color: #b7b7b7;
-    font-size: 1.4rem;
-    margin-left: 10px;
+.breadcrumb-links p {
+    color: #777777;
+    font-size: 1.5rem;
+    display: block;
 }
 
 /* breadcrumb end */
