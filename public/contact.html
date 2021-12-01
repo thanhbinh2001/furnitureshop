@@ -8,12 +8,15 @@
     <title>Contact</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Source+Sans+Pro:wght@900&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Source+Sans+Pro:wght@900&display=swap"
+        rel="stylesheet" />
 
     <!-- Css -->
     <link rel="stylesheet" href="assets/css/base.css" />
@@ -21,6 +24,8 @@
     <link rel="stylesheet" href="assets/css/grid.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
     <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
 
 </head>
 
@@ -30,12 +35,41 @@
         <header id="header">
             <div class="grid wide">
                 <div class="row header-wrapper">
-                    <div class="col l-3">
+                    <div class="col m-1 c-1 hide-on-pc">
+                        <div class="mobile-nav">
+
+                            <label for="mobile-nav-check">
+                                <i class="fas fa-bars "></i>
+                            </label>
+                            <input type="checkbox" name="" id="mobile-nav-check" hidden>
+
+                            <ul class="mobile-nav-list">
+                                <li class="mobile-nav-item">
+                                    <a href="./index.html" class="mobile-nav-item__link">Home</a>
+                                </li>
+                                <li class="mobile-nav-item">
+                                    <a href="./product.html" class="mobile-nav-item__link">Product</a>
+                                </li>
+                                <li class="mobile-nav-item">
+                                    <a href="./about.html" class="mobile-nav-item__link">About</a>
+                                </li>
+                                <li class="mobile-nav-item">
+                                    <a href="./tracking.html" class="mobile-nav-item__link">Tracking</a>
+                                </li>
+                                <li class="mobile-nav-item">
+                                    <a href="./contact.html" class="mobile-nav-item__link">Contact</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-3 c-3 m-9 c-7">
                         <a href="./index.html" class="header-brand">
                             <img src="./assets/images/logo.png" alt="logo" />
                         </a>
                     </div>
-                    <div class="col l-6">
+                    <div class="col l-6 hide-on-mobile-tablet">
                         <ul class="header-list">
                             <li class="header-item">
                                 <a href="./index.html" class="header-item__link">Home</a>
@@ -54,7 +88,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 m-2 c-4">
                         <div class="header-tool">
                             <ul class="header-tool__list">
                                 <li class="header-tool__item header-tool__item-search">
@@ -62,7 +96,9 @@
                                     <div class="header-tool__item-input active">
                                         <div class="grid wide">
                                             <form action="">
-                                                <input type="text" name="header-search" id="header-search" placeholder="Search Here" class="header-tool__item-search-input col l-11" />
+                                                <input type="text" name="header-search" id="header-search"
+                                                    placeholder="Search Here"
+                                                    class="header-tool__item-search-input col l-11" />
                                                 <span class="header-tool__item-input-close l-1">
                                                     <i class="fas fa-times"></i>
                                                 </span>
@@ -92,7 +128,7 @@
                                 </li>
                                 <li class="header-tool__item header-tool__item-cart">
                                     <a href="./cart.html">
-                                        <i class="fas fa-cart-plus"></i>
+                                        <i class="fas fa-cart-plus header-tool__item-cart-icon"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -102,6 +138,17 @@
             </div>
         </header>
         <!-- header end-->
+
+        <section id="breadcrumb">
+            <div class="grid wide">
+                <div class="breadcrumb-wrapper">
+                    <h4>Contact</h4>
+                    <div class="breadcrumb-links">
+                        <p>Home <span>-</span> Contact</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <div class="container-contact">
             <div class="contact-header">
@@ -158,137 +205,132 @@
 
         </div>
 
-
-    </div>
-
-
-
-    <!-- footer start -->
-    <footer id=" footer ">
-        <div class="grid wide ">
-            <div class="footer-wrapper ">
-                <div class="col l-2 ">
-                    <div class="footer-content ">
-                        <h4 class="footer-heading ">My Account</h4>
-                        <ul class="footer-list ">
-                            <li class="footer-item ">
-                                <a href="./login.html " class="footer-item__link ">
-                                    Login Account
-                                </a>
-                            </li>
-                            <li class="footer-item ">
-                                <a href="./register.html " class="footer-item__link ">
-                                    Register Account
-                                </a>
-                            </li>
-                            <li class="footer-item ">
-                                <a href="./cart.html " class="footer-item__link ">
-                                    Shopping Cart
-                                </a>
-                            </li>
-                            <li class="footer-item ">
-                                <a href="./about.html " class="footer-item__link ">
-                                    About Us
-                                </a>
-                            </li>
-                        </ul>
+        <footer id="footer">
+            <div class="grid wide">
+                <div class="footer-wrapper">
+                    <div class="col l-2 m-6 c-12 ">
+                        <div class="footer-content">
+                            <h4 class="footer-heading">My Account</h4>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a href="./login.html" class="footer-item__link">
+                                        Login Account
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="./register.html" class="footer-item__link">
+                                        Register Account
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="./cart.html" class="footer-item__link">
+                                        Shopping Cart
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="./about.html" class="footer-item__link">
+                                        About Us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col l-2 ">
-                    <div class="footer-content ">
-                        <h4 class="footer-heading ">Product</h4>
-                        <ul class="footer-list ">
-                            <li class="footer-item ">
-                                <a href="./product.html " class="footer-item__link ">
-                                    Living room
-                                </a>
-                            </li>
-                            <li class="footer-item ">
-                                <a href="./product.html " class="footer-item__link ">
-                                    Bedroom
-                                </a>
-                            </li>
-                            <li class="footer-item ">
-                                <a href="./product.html " class="footer-item__link ">
-                                    Decor & Kitchen
-                                </a>
-                            </li>
-                            <li class="footer-item ">
-                                <a href="./product.html " class="footer-item__link ">
-                                    Collections
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="col l-2 m-6 c-12">
+                        <div class="footer-content">
+                            <h4 class="footer-heading">Product</h4>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a href="./product.html" class="footer-item__link">
+                                        Living room
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="./product.html" class="footer-item__link">
+                                        Bedroom
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="./product.html" class="footer-item__link">
+                                        Decor & Kitchen
+                                    </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="./product.html" class="footer-item__link">
+                                        Collections
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col l-2 ">
-                    <div class="footer-content ">
-                        <h4 class="footer-heading ">My Account</h4>
-                        <ul class="footer-list ">
-                            <li class="footer-item ">
-                                <a href=" " class="footer-item__link "> Facebook </a>
-                            </li>
-                            <li class="footer-item ">
-                                <a href=" " class="footer-item__link "> Instagram </a>
-                            </li>
-                            <li class="footer-item ">
-                                <a href=" " class="footer-item__link "> Twitter </a>
-                            </li>
-                            <li class="footer-item ">
-                                <a href=" " class="footer-item__link "> Website </a>
-                            </li>
-                        </ul>
+                    <div class="col l-2 m-6 c-12">
+                        <div class="footer-content">
+                            <h4 class="footer-heading">My Account</h4>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link"> Facebook </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link"> Instagram </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link"> Twitter </a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="" class="footer-item__link"> Website </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col l-4 ">
-                    <div class="footer-content ">
-                        <h4 class="footer-heading ">My Account</h4>
-                        <p>You Will Receive Notifications About New Shop News</p>
-                        <div class="subscribe-form ">
-                            <input type="text " name="email " id=" " placeholder="Enter Email Address " class="subscribe-control col l-8 " style="background-color: #f2f2f2 " />
-                            <button type="submit " class="subscribe-submit ">
-                                Subscribe
-                            </button>
+                    <div class="col l-4 m-6 c-12">
+                        <div class="footer-content">
+                            <h4 class="footer-heading">Newsletter</h4>
+                            <p>You Will Receive Notifications About New Shop News</p>
+                            <div class="subscribe-form">
+                                <input type="text" name="email" id="" placeholder="Enter Email Address"
+                                    class="subscribe-control col l-8" style="background-color: #f2f2f2" />
+                                <button type="submit" class="subscribe-submit">
+                                    Subscribe
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer-wrapper footer-copyright ">
-                <div class="col l-8 ">
-                    <p>
-                        Copyright © 2021 All rights reserved | This template is made with by <a href="./index.html ">BBC
-                            Furniture Store</a>
-                    </p>
+                <div class="footer-wrapper footer-copyright">
+                    <div class="col l-8">
+                        <p>
+                            Copyright © 2021 All rights reserved | This template is made
+                            with by <a href="./index.html">BBC Furniture Store</a>
+                        </p>
+                    </div>
+                    <div class="col l-4">
+                        <ul class="footer-social-list">
+                            <li class="footer-social-item">
+                                <a href="" class="footer-social-link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="footer-social-item">
+                                <a href="" class="footer-social-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="footer-social-item">
+                                <a href="" class="footer-social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col l-4 ">
-                    <ul class="footer-social-list ">
-                        <li class="footer-social-item ">
-                            <a href=" " class="footer-social-link ">
-                                <i class="fab fa-facebook-f "></i>
-                            </a>
-                        </li>
-                        <li class="footer-social-item ">
-                            <a href=" " class="footer-social-link ">
-                                <i class="fab fa-twitter "></i>
-                            </a>
-                        </li>
-                        <li class="footer-social-item ">
-                            <a href=" " class="footer-social-link ">
-                                <i class="fab fa-instagram "></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-        </div>
-        <div class="footer-back ">
-            <a href="# ">
-                <i class="fas fa-chevron-up "></i>
-            </a>
-        </div>
-    </footer>
-    <!-- footer end -->
-
+            <div class="footer-back">
+                <a href="#">
+                    <i class="fas fa-chevron-up"></i>
+                </a>
+            </div>
+        </footer>>
+        <!-- footer end -->
+    </div>
 </body>
 
 </html>

@@ -1,7 +1,6 @@
 var sliderNumber = $$(".slider-item").length;
 var sliderCounter = 0;
-// var sliderWidth = $(".slider-item").clientWidth;
-var sliderWidth = 1200;
+var sliderWidth = $(".slider-item").clientWidth;
 var sliderList = $(".slider-list");
 // slider auto
 setInterval(() => {

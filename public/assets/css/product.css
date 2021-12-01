@@ -115,7 +115,9 @@
 
 .product-pagination {
     text-align: center;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .product-pagination-link {
@@ -136,4 +138,6 @@
     border-color: #000;
 }
 
-/* product start */
+
+
+/* product end */
