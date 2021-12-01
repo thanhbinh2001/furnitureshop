@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="zxx">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -18,6 +18,8 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Source+Sans+Pro:wght@900&display=swap"
         rel="stylesheet" />
 
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
     <!--CSS-->
     <link rel="stylesheet" href="assets/css/base.css" />
@@ -114,9 +116,9 @@
                 <div class="row">
                     <div class="col l-12">
                         <div class="breadcrumb-wrapper">
-                            <h4>Login Account</h4>
+                            <h4>Forget Password</h4>
                             <div class="breadcrumb-links">
-                                <p>Home <span>-</span> Login</p>
+                                <p>Home <span>-</span> Forget Password</p>
                             </div>
                         </div>
                     </div>
@@ -130,31 +132,32 @@
             <div class="grid wide">
                 <div class="row align-items-center">
                     <div class="col l-6">
-                        <img src="assets/images/background_login.png" />
+                        <img src="assets/images/background_login.png" height="422" width="555" />
                     </div>
                     <div class="col l-6">
                         <div class="login_part_form">
                             <div class="login_part_form_iner">
-                                <h3>Welcome Back ! <br> Please Sign in now</h3>
+                                <h3>Welcome BBC Furniture ! <br> Please Fill In The Information.</h3>
                                 <form class="row contact_form" action="#" method="post" novalidate="novalidate">
                                     <div class="col l-12 form-group p_star">
+                                        <input type="text" class="form-control" id="username" name="username" value=""
+                                            placeholder="Full Name">
+                                    </div>
+                                    <div class="col l-12 form-group p_star">
                                         <input type="email" class="form-control" id="email" name="email" value=""
-                                            placeholder="Email">
+                                            placeholder="Email ">
                                     </div>
                                     <div class="col l-12 form-group p_star">
                                         <input type="password" class="form-control" id="password" name="password"
-                                            value="" placeholder="Password">
+                                            value="" placeholder="Enter the most recent password">
                                     </div>
+
                                     <div class="col l-12 form-group">
-                                        <div class="creat_account d-flex align-items-center">
-                                            <input type="checkbox" id="f-option" name="selector">
-                                            <label for="f-option">Remember me</label>
-                                        </div>
                                         <button type="submit" value="submit" class="btn_3">
-                                            log in
+                                            Confirm
                                         </button>
-                                        <a class="lost_pass" href="./forget.html">Forget password?</a>
-                                        <a class="register_account" href="./register.html">Register Account</a>
+                                        <a class="lost_pass" href="./register.html">Register Account</a>
+                                        <a class="register_account" href="./login.html">Login Account</a>
                                     </div>
                                 </form>
                             </div>
@@ -291,7 +294,6 @@
             </div>
         </footer>
         <!-- footer end -->
-
 </body>
 
 </html>

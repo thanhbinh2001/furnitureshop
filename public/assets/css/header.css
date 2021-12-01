@@ -147,6 +147,25 @@
     color: #000;
 }
 
+.header-tool__item-cart-icon {
+    position: relative;
+}
+
+.header-tool__item-cart-icon::after {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #f13d80;
+    width: 14px;
+    height: 14px;
+    right: -8px;
+    top: -8px;
+    content: "5";
+    text-align: center;
+    line-height: 15px;
+    font-size: 10px;
+    color: #fff;
+}
+
 /* breadcrumb start */
 #breadcrumb {
     background-color: var(--bg-1-color);
