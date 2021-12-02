@@ -1,6 +1,7 @@
 .container-tracking {
-    width: 1200px;
+    max-width: 1200px;
     margin: 100px auto 0 auto;
+    padding-left: 30px;
 }
 
 .tracking-heading__text {

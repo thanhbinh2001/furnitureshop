@@ -1,5 +1,4 @@
 .container-confirm {
-    width: 1200px;
     margin: 100px auto;
 }
 
@@ -11,14 +10,16 @@ p.confirm-heading {
 
 .bill-wrap {
     display: flex;
+    width: 1000px;
+    margin: auto;
 }
 
 .bill-1 {
     background-color: var(--bg-1-color);
     width: 500px;
     height: 497px;
-    flex: 1;
     margin-right: 30px;
+    margin-left: 10px;
 }
 
 .bill-heading {
@@ -45,14 +46,18 @@ p.confirm-heading {
     background-color: var(--bg-1-color);
     width: 500px;
     height: 285px;
-    flex: 0.7;
     margin-left: 30px;
+    margin-right: 10px;
+}
+
+.confirm-detail-wrap {
+    width: 1000px;
+    margin: auto;
 }
 
 .confirm-detail {
     margin: 50px 0 0 0;
     background-color: var(--bg-1-color);
-    /* height: 387px; */
 }
 
 .confirm-detail__heading {

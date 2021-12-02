@@ -1,11 +1,11 @@
 .container-checkout {
-    width: 1140px;
+    width: 1000px;
     display: flex;
     margin: 100px auto;
 }
 
 .checkout-form {
-    width: 800px;
+    width: 650px;
     /* border: 1px solid red; */
     position: relative;
 }
@@ -40,7 +40,7 @@
 }
 
 .checkout-receipt {
-    width: 350px;
+    width: 365px;
     background-color: rgb(235, 217, 202, 0.5);
 }
 
