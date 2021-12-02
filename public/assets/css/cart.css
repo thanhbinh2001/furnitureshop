@@ -85,7 +85,7 @@
 .btn-continue-shopping {
     margin: 20px 20px 20px 0;
 }
-
+.btn-continue-shopping a,
 .btn-to-checkout a {
     color: var(--white-color);
 }
