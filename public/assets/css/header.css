@@ -99,7 +99,6 @@
     color: #000;
 }
 
-
 .header-tool__item-input-close {}
 
 .header-tool__item-user {
@@ -166,7 +165,9 @@
     color: #fff;
 }
 
+
 /* breadcrumb start */
+
 #breadcrumb {
     background-color: var(--bg-1-color);
     padding: 10px;
@@ -188,7 +189,7 @@
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 10px;
-    text-transform: capitalize
+    text-transform: capitalize;
 }
 
 .breadcrumb-links p {
@@ -196,5 +197,6 @@
     font-size: 1.5rem;
     display: block;
 }
+
 
 /* breadcrumb end */

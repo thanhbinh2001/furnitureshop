@@ -1,6 +1,205 @@
 /* mobile < 740px*/
 
 @media (max-width: 739px) {
+    /* START CHECKOUT */
+    .container-checkout {
+        width: 400px;
+        flex-wrap: wrap;
+    }
+    .checkout-form {
+        width: 487px;
+        margin-right: -15px;
+    }
+    .form-checkout__input input {
+        width: 96%;
+        display: block;
+    }
+    .form-checkout__input input[type="email"],
+    .form-checkout__input textarea {
+        width: 400px;
+    }
+    .checkout-receipt {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .btn-checkout {
+        padding: 7px 51px;
+        font-size: 1.2rem;
+    }
+    .checkout-receipt__info-method-payment,
+    .checkout-receipt__info-title,
+    .checkout-receipt__info-quantity-special,
+    .checkout-receipt__info-price {
+        font-size: 1.2rem;
+    }
+    /* END CHECKOUT */
+    /* START CART */
+    .table-cart {
+        width: 400px;
+        margin: auto;
+    }
+    .table-cart__product-info__name {
+        font-size: 0.9rem;
+        width: 150px;
+        transform: translateY(-13px);
+    }
+    .table-cart__heading-col,
+    .table-cart__product-info__price,
+    .table-cart__product-info__quantity,
+    .table-cart__product-info__total {
+        font-size: 0.7rem;
+    }
+    .table-cart__heading-col {
+        margin-left: 0px;
+    }
+    .table-cart table tr td {
+        padding-left: 0px;
+    }
+    .table-cart__product-info__quantity input {
+        width: 39px;
+        height: 24px;
+        font-size: 0.9rem;
+    }
+    .table-cart__product-info__img img {
+        width: 50px;
+        height: 50px;
+    }
+    .cart-sub__heading,
+    .cart-sub__price {
+        font-size: 0.6rem;
+        margin-right: 27px;
+    }
+    .btn-continue-shopping,
+    .btn-to-checkout {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+    /* END CART */
+    /* START ABOUT_CONFIRM */
+    .container-confirm {
+        width: 100%;
+        margin-left: 0;
+    }
+    .bill-wrap,
+    .confirm-detail-wrap {
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+    .bill-heading {
+        padding-top: 40px;
+        margin: 0 40px;
+        font-size: 1.3rem;
+    }
+    .confirm-detail__title,
+    .confirm-detail__heading {
+        padding: 10px 5px;
+        font-size: 1.2rem;
+    }
+    .confirm-detail__specific {
+        padding-left: 5px;
+    }
+    .bill-1,
+    .bill-2 {
+        width: 386px;
+        margin: 20px auto;
+    }
+    .confirm-detail__title-quantity,
+    .confirm-detail__title-total,
+    .confirm-detail__title-product,
+    .confirm-detail__specific-price,
+    .confirm-detail__specific-quantity,
+    .confirm-detail__specific-name,
+    .bill-info_title,
+    .bill-info__value {
+        font-size: 1.2rem;
+    }
+    .bill-info:last-child {
+        margin-bottom: 30px;
+    }
+    /* END ABOUT_CONFIRM  */
+    /* START TRACKING */
+    .tracking-heading__text {
+        text-align: justify;
+    }
+    .tracking-heading__text {
+        width: 100%;
+    }
+    .container-tracking {
+        padding: 0 6px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        margin: 100px auto;
+    }
+    .form__input input[type="text"] {
+        width: 55%;
+    }
+    .btn-tracking {
+        padding: 4px 18px;
+    }
+    /* END TRACKING */
+    /* CONTACT START*/
+    .container-contact {
+        margin-left: 5px;
+    }
+    .contact-wrap-content {
+        flex-wrap: wrap;
+    }
+    .contact-header__text {
+        font-size: 2.2rem;
+    }
+    .contact-form {
+        flex-direction: column;
+    }
+    .contact-form__input input {
+        width: 90%;
+        height: 40px;
+    }
+    .contact-form__input input::placeholder,
+    .contact-form__input input[type="subject"]::placeholder,
+    .contact-form__input textarea::placeholder,
+    .contact-info__specific--address,
+    .btn-send a,
+    .btn-tracking a {
+        font-size: 0.9rem;
+    }
+    .contact-info {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-info__specific--address p {
+        display: none;
+    }
+    .contact-info__specific {
+        flex-direction: column;
+    }
+    .contact-info__specific i {
+        font-size: 2.5rem;
+        margin: 10px 20px 10px 10px;
+        margin-left: 49px;
+    }
+    .contact-info__specific a {
+        margin-left: 15px;
+    }
+    .contact-form__input input[type="subject"],
+    .contact-form__input textarea {
+        width: 90%;
+    }
+    .btn-send {
+        width: 105px;
+        height: 22px;
+        margin-left: 15px;
+    }
+    .btn-send a {
+        margin-left: 0px;
+        line-height: 1.9rem;
+    }
+    /* CONTACT END*/
     .wide {
         width: 400px;
     }
