@@ -86,6 +86,10 @@
     margin: 20px 20px 20px 0;
 }
 
+.btn-to-checkout a {
+    color: var(--white-color);
+}
+
 .btn-to-checkout {
     margin: 20px 20px 20px 0;
 }
