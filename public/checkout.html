@@ -155,19 +155,18 @@
                     <h3 class="form-checkout__heading">Billing Details</h3>
                     <div class="input-wrap">
                         <div class="form-checkout__input">
-                            <input type="text" placeholder="First Name" />
+                            <input type="text" placeholder="Full Name" required />
+                        </div>
+
+                        <div class="form-checkout__input">
+                            <input type="tel" placeholder="Phone Number " pattern="(84|0[3|5|7|8|9])+([0-9]{8})\b"
+                                required />
                         </div>
                         <div class="form-checkout__input">
-                            <input type="text" placeholder="Last Name" />
+                            <input type="email" placeholder="Email" required />
                         </div>
                         <div class="form-checkout__input">
-                            <input type="text" placeholder="Phone Number " />
-                        </div>
-                        <div class="form-checkout__input">
-                            <input type="text" placeholder="Email" />
-                        </div>
-                        <div class="form-checkout__input">
-                            <input type="email" placeholder="Address" />
+                            <input type="text" placeholder="Address" required />
                         </div>
 
                         <div class="form-checkout__input">
@@ -233,17 +232,17 @@
 
                 <div class="checkout-receipt__info-payment">
                     <div class="checkout-receipt__info-method-payment">
-                        <input type="radio" checked value="cash" name="payment" id="payment-cash"/>
+                        <input type="radio" checked value="cash" name="payment" id="payment-cash" />
                         <label for="payment-cash">Cash</label>
                     </div>
                     <div class="checkout-receipt__info-method-payment">
-                        <input type="radio" value="Paypal" name="payment" id="payment-paypal"/>
+                        <input type="radio" value="Paypal" name="payment" id="payment-paypal" />
                         <label for="payment-paypal">Paypal</label>
                     </div>
                 </div>
 
                 <div class="checkout-receipt__btn">
-                    <button class="btn-checkout">Check Out</button>
+                    <button class="btn-checkout form-submit">Check Out</button>
                 </div>
             </div>
         </div>

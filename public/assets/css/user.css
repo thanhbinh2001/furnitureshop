@@ -44,6 +44,9 @@
     width: 100%;
 }
 
+.message::placeholder {
+    color: red;
+}
 
 .form-group .btn_3 {
     width: 100%;
@@ -60,6 +63,25 @@
 .p_star {
     color: red;
 }
+
+.form-group {
+    position: relative;
+}
+
+.form-message {
+    position: absolute;
+    font-size: 1.6rem;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+    display: none;
+}
+
+.form-message.active {
+    display: block;
+}
+
 
 .form-group a {
     font-size: 1.6rem;

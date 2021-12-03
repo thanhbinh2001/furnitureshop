@@ -23,9 +23,8 @@
 .form-checkout__input input {
     margin: 20px 20px 20px 0;
     height: 40px;
-    width: 300px;
+    width: 619px;
     padding-left: 12px;
-    outline: none;
     line-height: 50px;
     outline: rgb(73, 80, 87) none 0px;
     border-radius: 5px;
@@ -33,13 +32,6 @@
     border: 1px solid #eeeeee;
 }
 
-.form-checkout__input input[type="email"] {
-    width: 619px;
-    outline: rgb(73, 80, 87) none 0px;
-    border-radius: 5px;
-    transition: border-color 0.15s ease-in-out;
-    border: 1px solid #eeeeee;
-}
 
 .form-checkout__input textarea {
     padding: 12px;

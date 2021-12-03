@@ -162,22 +162,22 @@
                         <div class="login_part_form">
                             <div class="login_part_form_iner">
                                 <h3>Welcome BBC Furniture ! <br> Please Fill In The Information.</h3>
-                                <form class="row contact_form" action="#" method="post" novalidate="novalidate">
+                                <form class="row contact_form" action="#" method="post">
                                     <div class="col l-12 m-12 c-12 form-group p_star">
                                         <input type="text" class="form-control" id="username" name="username" value=""
-                                            placeholder="Full Name">
+                                            placeholder="Full Name" required>
                                     </div>
                                     <div class="col l-12 m-12 c-12 form-group p_star">
                                         <input type="email" class="form-control" id="email" name="email" value=""
-                                            placeholder="Email ">
+                                            placeholder="Email " required>
                                     </div>
                                     <div class="col l-12 m-12 c-12 form-group p_star">
                                         <input type="password" class="form-control" id="password" name="password"
-                                            value="" placeholder="Enter the most recent password">
+                                            value="" placeholder="Enter the most recent password" required>
                                     </div>
 
                                     <div class="col l-12 m-12 c-12 form-group">
-                                        <button type="submit" value="submit" class="btn_3">
+                                        <button type="submit" value="submit" class="btn_3 form-submit">
                                             Confirm
                                         </button>
                                         <a class="lost_pass" href="./register.html">Register Account</a>
@@ -320,6 +320,7 @@
         <!-- footer end -->
     </div>
     <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/validate.js"></script>
 
 </body>
 
