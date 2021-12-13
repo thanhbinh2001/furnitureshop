@@ -5,7 +5,6 @@
 .nav-admin {
     display: flex;
     justify-content: space-between;
-    width: 139%;
     height: 100px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     user-select: none;
@@ -43,7 +42,6 @@
 
 .admin-header {
     display: flex;
-    width: 132%;
     justify-content: flex-end;
     margin: 50px;
 }
@@ -80,7 +78,13 @@
     background-color: var(--bg-1-color);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-
+.container-table{
+    width: 100%;
+}
+.table-content{
+    width: 100%;
+    overflow-x: scroll;
+}
 .wrap-data {
     display: flex;
     justify-content: space-between;
@@ -272,7 +276,6 @@ th {
 
 .pagination {
     display: flex;
-    width: 150%;
     margin: 50px 0;
     align-items: center;
     justify-content: space-evenly;
