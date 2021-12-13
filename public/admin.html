@@ -8,19 +8,15 @@
     <title>ADMIN | BCC</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <!-- font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Source+Sans+Pro:wght@900&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Source+Sans+Pro:wght@900&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="./assets/css/admin.css">
     <link rel="stylesheet" href="./assets/css/base.css">
-    <script src="./assets/js/admin.js"></script>
 
 
 
@@ -41,15 +37,7 @@
                 </div>
             </div>
         </div>
-        <div class="admin-header">
-            <div class="btn-admin">
-                <button>
-                    <a>ADD PRODUCT</a>
-                </button>
-            </div>
-            <input type="text" placeholder="Search">
 
-        </div>
         <div class="wrap-data">
             <div class="menu">
                 <ul class="menu-list">
@@ -57,145 +45,449 @@
                         <a class="menu-item__link" href="">Product</a>
                     </li>
                     <li class="menu-item">
-                        <a class="menu-item__link" href="">Customer </a>
+                        <a class="menu-item__link" href="">Detail Product</a>
                     </li>
                     <li class="menu-item">
-                        <a class="menu-item__link" href="">Order</a>
+                        <a class="menu-item__link" href="">Image Product</a>
                     </li>
-                    <li class="menu-item">
-                        <a class="menu-item__link" href="">Revenue</a>
-                    </li>
+
                 </ul>
             </div>
-            <div class="container-table">
-                <table class="table-content">
-                    <tr class="row__header">
-                        <th class="heading-id">ID</th>
-                        <th class="heading-name">NAME</th>
-                        <th class="heading-price">PRICE</th>
-                        <th class="heading-rate">RATE</th>
-                        <th class="heading-quantity">STOCK</th>
-                        <th class="heading-quantity">IMPORT</th>
-                        <th class="heading-date">DATE IMPORT</th>
-                        <th class="heading-id">ID CATEGORY</th>
-                        <th class="heading-action">ACTION </th>
-                    </tr>
-
-                    <!-- START ROW  -->
-                    <tr class="row__data">
-                        <td>KC10</td>
-                        <td>Maria Anders</td>
-                        <td>$995</td>
-                        <td>0.35</td>
-                        <td>152</td>
-                        <td>3536</td>
-                        <td>14/12/2021</td>
-                        <td>Germany</td>
-                        <td>
-                            <button class="btn-edit">
-                                <a href="">
-                                    <i class="fas fa-edit"></i>
-                                </a>
+            <div class="tables">
+                <div class="table-item active">
+                    <div class="admin-header">
+                        <div class="btn-admin">
+                            <button class="btn-add">
+                                <a>ADD PRODUCT</a>
                             </button>
-                            <button class="btn-delete">
-                                <a href="">
-                                    <i class="fas fa-trash-alt"></i>
-                                </a>
+                        </div>
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <table class="table-content">
+                        <tr class="row__header">
+                            <th class="heading-title">ID</th>
+                            <th class="heading-title">NAME</th>
+                            <th class="heading-title">PRICE</th>
+                            <th class="heading-title">RATE</th>
+                            <th class="heading-title">STOCK</th>
+                            <th class="heading-title">IMPORT</th>
+                            <th class="heading-title">DATE IMPORT</th>
+                            <th class="heading-title">ID CATEGORY</th>
+                            <th class="heading-title">ACTION </th>
+                        </tr>
+
+                        <!-- START ROW  -->
+                        <tr class="row__data">
+                            <td>
+                                <p>BR01</p>
+                            </td>
+                            <td>
+                                <p class="heading-name">Balmore King Size Bed, Whitewash Boucle & Black</p>
+                            </td>
+                            <td>
+                                <p>$699</p>
+                            </td>
+                            <td>
+                                <p>0.03</p>
+                            </td>
+                            <td>
+                                <p>53</p>
+                            </td>
+                            <td>
+                                <p>103</p>
+                            </td>
+                            <td>
+                                <p>10/2/2021</p>
+                            </td>
+                            <td>
+                                <p>BR</p>
+                            </td>
+                            <td>
+                                <button class="btn-edit">
+                                    <a href="">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </button>
+                                <button class="btn-delete">
+                                    <a href="">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- END ROW  -->
+
+
+
+                    </table>
+                    <div class="pagination">
+                        <a href="#">«</a>
+                        <a href="#">1</a>
+                        <a class="active" href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#" class="pagination-active">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">10</a>
+                        <a href="#">»</a>
+                    </div>
+                </div>
+                <div class="table-item">
+                    <div class="admin-header">
+                        <div class="btn-admin">
+                            <button class="btn-add">
+                                <a>ADD PRODUCT DETAIL</a>
                             </button>
-                        </td>
-                    </tr>
-                    <!-- END ROW  -->
+                        </div>
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <table class="table-content">
+                        <tr class="row__header">
+                            <th class="heading-title ">ID</th>
+                            <th class="heading-title ">WIDTH</th>
+                            <th class="heading-title ">HEIGHT</th>
+                            <th class="heading-title ">DEPTH</th>
+                            <th class="heading-title ">WEIGHT</th>
+                            <th class="heading-title ">MATERIAL</th>
+                            <th class="heading-title ">ORIGIN</th>
+                            <th class="heading-title ">DESCRIPTION</th>
+                            <th class="heading-title ">ACTION </th>
+                        </tr>
+
+                        <!-- START ROW  -->
+                        <tr class="row__data">
+                            <td>
+                                <p>BR01</p>
+                            </td>
+                            <td>
+                                <p>178</p>
+                            </td>
+                            <td>
+                                <p>
+                                    94
+                                </p>
+                            </td>
+                            <td>
+                                <p>232</p>
+                            </td>
+                            <td>
+                                <p>68</p>
+                            </td>
+                            <td>
+                                <p>fabric</p>
+                            </td>
+                            <td>
+                                <p>Singapore</p>
+                            </td>
+                            <td>
+                                <p class="heading-description">Premium dreams? Yes, please. Bedtime just got better with Balmore – just look at those smooth, rounded edges and soft boucle upholstery. That contrasting black metal frame? So sophisticated. There's no need to count sheep
+                                    with this sleep setup.</p>
+                            </td>
+                            <td>
+                                <button class="btn-edit">
+                                    <a href="">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </button>
+                                <button class="btn-delete">
+                                    <a href="">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- END ROW  -->
 
 
 
-                </table>
-                <div class="pagination">
-                    <a href="#">«</a>
-                    <a href="#">1</a>
-                    <a class="active" href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#" class="pagination-active">5</a>
-                    <a href="#">6</a>
-                    <a href="#">7</a>
-                    <a href="#">8</a>
-                    <a href="#">9</a>
-                    <a href="#">10</a>
-                    <a href="#">»</a>
+                    </table>
+                    <div class="pagination">
+                        <a href="#">«</a>
+                        <a href="#">1</a>
+                        <a class="active" href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#" class="pagination-active">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">10</a>
+                        <a href="#">»</a>
+                    </div>
+                </div>
+                <div class="table-item">
+                    <div class="admin-header">
+                        <div class="btn-admin">
+                            <button class="btn-add">
+                                <a>ADD IMAGE PRODUCT</a>
+                            </button>
+                        </div>
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <table class="table-content">
+                        <tr class="row__header">
+                            <th class="heading-title ">ID IMAGE</th>
+                            <th class="heading-title ">LINK IMAGE</th>
+                            <th class="heading-title ">ID PRODUCT</th>
+                            <th class="heading-title ">ACTION </th>
+                        </tr>
+
+                        <!-- START ROW  -->
+                        <tr class="row__data">
+                            <td>
+                                <p>IM01</p>
+                            </td>
+                            <td>
+                                <p>assets/img/product/bedroom/balmore1_4.jpg</p>
+                            </td>
+                            <td>
+                                <p>BR01</p>
+                            </td>
+                            <td>
+                                <button class="btn-edit">
+                                    <a href="">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </button>
+                                <button class="btn-delete">
+                                    <a href="">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- END ROW  -->
+                        <!-- START ROW  -->
+                        <tr class="row__data">
+                            <td>
+                                <p>IM02</p>
+                            </td>
+                            <td>
+                                <p>assets/img/product/bedroom/balmore1_3.jpg</p>
+                            </td>
+                            <td>
+                                <p>BR01</p>
+                            </td>
+                            <td>
+                                <button class="btn-edit">
+                                    <a href="">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </button>
+                                <button class="btn-delete">
+                                    <a href="">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- END ROW  -->
+                        <!-- START ROW  -->
+                        <tr class="row__data">
+                            <td>
+                                <p>IM03</p>
+                            </td>
+                            <td>
+                                <p>assets/img/product/bedroom/balmore1_2.jpg</p>
+                            </td>
+                            <td>
+                                <p>BR01</p>
+                            </td>
+                            <td>
+                                <button class="btn-edit">
+                                    <a href="">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </button>
+                                <button class="btn-delete">
+                                    <a href="">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </button>
+                            </td>
+                        </tr>
+                        <!-- END ROW  -->
+
+                    </table>
+                    <div class="pagination">
+                        <a href="#">«</a>
+                        <a href="#">1</a>
+                        <a class="active" href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#" class="pagination-active">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">10</a>
+                        <a href="#">»</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="container-opacity"></div>
-    <div class="container-form ">
-        <form action="">
-            <div class="row-form__line">
-                <div>
-                    <label class="label-form">ID</label>
-                    <input class="input-form" type="text">
+    <div class="forms">
+        <div class="form-item">
+            <form action="">
+                <div class="row-form__line">
+                    <div>
+                        <label class="label-form">ID</label>
+                        <input class="input-form" type="text" name="id_product" placeholder="BR01">
+                    </div>
+                    <div>
+                        <label class="label-form">LINK IMAGE</label>
+                        <input name="link_image" type="text" class="input-form">
+                    </div>
                 </div>
 
-                <div>
-                    <label class="label-form">NAME</label>
-                    <input class="input-form" type="text">
-                </div>
-            </div>
-            <div class="row-form__line">
-                <div>
-                    <label class="label-form">LINK</label>
-                    <textarea name="" id="" cols="30" rows="10" class="input-form--link"></textarea>
-                </div>
-            </div>
-            <div class="row-form__line">
-                <div>
-                    <label class="label-form">PRICE</label>
-                    <input class="input-form" type="text">
+                <div class="row-form__line">
+                    <div>
+                        <label class="label-form">PRICE</label>
+                        <input class="input-form" type="text" name="price">
+                    </div>
+
+                    <div>
+                        <label class="label-form">SALE PRICE</label>
+                        <input class="input-form" type="text" name="saleprice">
+                    </div>
                 </div>
 
-                <div>
-                    <label class="label-form">RATE</label>
-                    <input class="input-form" type="text">
-                </div>
-            </div>
+                <div class="row-form__line">
+                    <div>
+                        <label class="label-form">QUANTITY STOCK</label>
+                        <input class="input-form" type="text" name="quantity_stock">
+                    </div>
 
-            <div class="row-form__line">
-                <div>
-                    <label class="label-form">QUANTITY STOCK</label>
-                    <input class="input-form" type="text">
-                </div>
-
-                <div>
-                    <label class="label-form">QUANTITY IMPORT</label>
-                    <input class="input-form" type="text">
-                </div>
-            </div>
-
-            <div class="row-form__line">
-                <div>
-                    <label class="label-form">DATE IMPORT</label>
-                    <input class="input-form" type="date">
+                    <div>
+                        <label class="label-form">QUANTITY IMPORT</label>
+                        <input class="input-form" type="text" name="quantity_import">
+                    </div>
                 </div>
 
-                <div>
-                    <label class="label-form">ID CATEGORY</label>
-                    <input class="input-form" type="text">
+                <div class="row-form__line">
+                    <div>
+                        <label class="label-form">DATE IMPORT</label>
+                        <input class="input-form" type="date" name="date_import">
+                    </div>
+
+                    <div>
+                        <label class="label-form">ID CATEGORY</label>
+                        <input class="input-form" type="text" name="category">
+                    </div>
                 </div>
-            </div>
-            <div class="btn-form">
-                <button class="btn-save">
-                    <a>SAVE</a>
-                </button>
-                <button class="btn-exit">
-                    <a>EXIT</a>
-                </button>
-
-            </div>
+                <div class="btn-form">
+                    <button class="btn-save">
+                        <a>SAVE</a>
+                    </button>
+                    <button class="btn-exit">
+                        <a>EXIT</a>
+                    </button>
+                </div>
 
 
-        </form>
+            </form>
+        </div>
+        <div class="form-item">
+            <form action="">
+                <div class="row-form__line">
+                    <div>
+                        <label class="label-form">ID PRODUCT</label>
+                        <input class="input-form" type="text" name="id_product" placeholder="">
+                    </div>
+
+                    <div>
+                        <label class="label-form">NAME</label>
+                        <input class="input-form" type="text" name="name_product">
+                    </div>
+                </div>
+
+                <div class="row-form__line">
+                    <div>
+                        <label class="label-form">WIDTH</label>
+                        <input class="input-form" type="text" name="width">
+                    </div>
+                    <div>
+                        <label class="label-form">HEIGHT</label>
+                        <input class="input-form" type="text" name="height">
+                    </div>
+
+
+                </div>
+                <div class="row-form__line">
+                    <div>
+                        <label class="label-form">DEPTH</label>
+                        <input class="input-form" type="text" name="depth">
+                    </div>
+                    <div>
+                        <label class="label-form">WEIGHT</label>
+                        <input class="input-form" type="text" name="weight">
+                    </div>
+                </div>
+                <div class="row-form__line">
+                    <div>
+                        <label class="label-form">ORIGIN</label>
+                        <input class="input-form" type="text" name="origin">
+                    </div>
+                    <div>
+                        <label class="label-form">MATERIAL</label>
+                        <input class="input-form" type="text" name="material">
+                    </div>
+                </div>
+                <div class="row-form__line">
+                    <div>
+                        <label class="label-form">DESCRIPTION</label>
+                        <textarea name="description" id="" cols="30" rows="10" class="input-form--link"></textarea>
+                    </div>
+                </div>
+                <div class="btn-form">
+                    <button class="btn-save">
+                        <a>SAVE</a>
+                    </button>
+                    <button class="btn-exit">
+                        <a>EXIT</a>
+                    </button>
+
+                </div>
+            </form>
+        </div>
+        <div class="form-item">
+            <form action="">
+                <div class="row-form__line">
+                    <div>
+                        <label class="label-form">ID PRODUCT</label>
+                        <input class="input-form" type="text" name="id_product" placeholder="">
+                    </div>
+
+                    <div>
+                        <label class="label-form">NAME</label>
+                        <input class="input-form" type="text" name="name_product">
+                    </div>
+                    <div>
+                        <label class="label-form">ID PRODUCT</label>
+                        <input class="input-form" type="text" name="id_product">
+                    </div>
+                </div>
+                <div class="btn-form">
+                    <button class="btn-save">
+                        <a>SAVE</a>
+                    </button>
+                    <button class="btn-exit">
+                        <a>EXIT</a>
+                    </button>
+
+                </div>
+            </form>
+        </div>
     </div>
 
+    <script src="./assets/js/admin.js"></script>
 
 </body>
 
