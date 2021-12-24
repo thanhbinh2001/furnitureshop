@@ -52,6 +52,10 @@
     padding: 5px;
 }
 
+.table-cart__product-info__remove {
+    margin-right: 15px;
+}
+
 .cart-sub {
     display: flex;
     justify-content: flex-end;
@@ -85,6 +89,7 @@
 .btn-continue-shopping {
     margin: 20px 20px 20px 0;
 }
+
 .btn-continue-shopping a,
 .btn-to-checkout a {
     color: var(--white-color);

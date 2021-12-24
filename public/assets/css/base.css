@@ -42,6 +42,12 @@ textarea {
     color: var(--white-color) !important;
 }
 
+.fa-times {
+    color: rgb(233, 67, 67);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
 #app,
 #header,
 #slider,
