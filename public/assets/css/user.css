@@ -7,7 +7,6 @@
     padding-top: 140px;
 }
 
-
 .login_part_form_iner h3 {
     font-size: 2.4rem;
     margin-bottom: 20px;
@@ -27,7 +26,7 @@
     height: 38px;
     color: #495057;
     outline: none;
-
+    margin-top: 8px;
 }
 
 .creat_account {
@@ -81,7 +80,6 @@
 .form-message.active {
     display: block;
 }
-
 
 .form-group a {
     font-size: 1.6rem;

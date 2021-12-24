@@ -27,6 +27,21 @@ li {
     list-style: none;
 }
 
+button {
+    cursor: pointer !important;
+}
+
+input,
+textarea {
+    color: rgb(49, 49, 49) !important;
+    font-family: "Poppins", sans-serif;
+}
+
+::selection {
+    background-color: var(--main-color) !important;
+    color: var(--white-color) !important;
+}
+
 #app,
 #header,
 #slider,

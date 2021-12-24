@@ -2,37 +2,29 @@
 
 @media (max-width: 739px) {
     /* START CHECKOUT */
-    .container-checkout {
-        width: 400px;
-        flex-wrap: wrap;
-    }
     .checkout-form {
-        width: 487px;
-        margin-right: -15px;
+        margin: auto;
+        margin-top: 30px;
+        width: 100%;
+        margin-left: 30px;
     }
-    .form-checkout__input input {
-        width: 96%;
-        display: block;
-    }
-    .form-checkout__input input[type="email"],
+    .form-checkout__input input,
     .form-checkout__input textarea {
-        width: 400px;
+        width: 350px;
     }
     .checkout-receipt {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+        width: 85%;
         margin: auto;
-        margin-top: 10px;
-    }
-    .btn-checkout {
-        padding: 7px 51px;
-        font-size: 1.2rem;
+        margin-top: 30px;
     }
     .checkout-receipt__info-method-payment,
     .checkout-receipt__info-title,
     .checkout-receipt__info-quantity-special,
     .checkout-receipt__info-price {
+        font-size: 1.2rem;
+    }
+    .btn-checkout {
+        padding: 10px 62px;
         font-size: 1.2rem;
     }
     /* END CHECKOUT */
@@ -61,7 +53,7 @@
     .table-cart__product-info__quantity input {
         width: 39px;
         height: 24px;
-        font-size: 0.9rem;
+        font-size: 0.9rem !important;
     }
     .table-cart__product-info__img img {
         width: 50px;
@@ -122,24 +114,14 @@
     }
     /* END ABOUT_CONFIRM  */
     /* START TRACKING */
-    .tracking-heading__text {
-        text-align: justify;
-    }
-    .tracking-heading__text {
-        width: 100%;
-    }
     .container-tracking {
-        padding: 0 6px;
-        max-width: 600px;
-        display: flex;
-        flex-direction: column;
-        margin: 100px auto;
+        padding-left: 20px;
     }
-    .form__input input[type="text"] {
-        width: 55%;
+    .tracking-heading__text {
+        width: 98%;
     }
     .btn-tracking {
-        padding: 4px 18px;
+        padding: 7px 39px;
     }
     /* END TRACKING */
     /* CONTACT START*/
@@ -151,6 +133,7 @@
     }
     .contact-header__text {
         font-size: 2.2rem;
+        margin-left: 4px;
     }
     .contact-form {
         flex-direction: column;
@@ -327,21 +310,8 @@
     }
     /* CONTACT END*/
     /* START TRACKING */
-    .tracking-heading__text {
-        text-align: justify;
-    }
-    .tracking-heading__text {
-        width: 100%;
-    }
     .container-tracking {
         padding-left: 60px;
-        max-width: 600px;
-        display: flex;
-        flex-direction: column;
-        margin: 100px auto;
-    }
-    .form__input input[type="text"] {
-        width: 55%;
     }
     .btn-tracking {
         padding: 4px 18px;
@@ -430,32 +400,27 @@
     }
     /* END CART */
     /* START CHECKOUT */
-    .container-checkout {
-        width: 752px;
-    }
     .checkout-form {
-        width: 487px;
-        margin-left: 5px;
-        margin-right: -15px;
+        margin: auto;
+        margin-top: 30px;
     }
-    .form-checkout__input input {
-        width: 215px;
-    }
-    .form-checkout__input input[type="email"],
+    .form-checkout__input input,
     .form-checkout__input textarea {
-        width: 450px;
+        width: 650px;
     }
     .checkout-receipt {
-        width: 268px;
-    }
-    .btn-checkout {
-        padding: 10px 62px;
-        font-size: 1.2rem;
+        width: 85%;
+        margin: auto;
+        margin-top: 30px;
     }
     .checkout-receipt__info-method-payment,
     .checkout-receipt__info-title,
     .checkout-receipt__info-quantity-special,
     .checkout-receipt__info-price {
+        font-size: 1.4rem;
+    }
+    .btn-checkout {
+        padding: 10px 62px;
         font-size: 1.2rem;
     }
     /* END CHECKOUT */
@@ -465,6 +430,13 @@
 /* mobile + tablet  < 1024px */
 
 @media (max-width: 1023px) {
+    .container-checkout {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
     .hide-on-mobile-tablet {
         display: none;
     }
