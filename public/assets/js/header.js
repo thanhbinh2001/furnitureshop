@@ -5,12 +5,9 @@ const headerSearch = $(".header-tool__item-search");
 const headerInput = $(".header-tool__item-input");
 const headerClose = $(".header-tool__item-input-close");
 headerSearch.onclick = () => {
-  headerInput.classList.toggle("active");
+    headerInput.classList.remove("active");
 };
 headerClose.onclick = (e) => {
-  e.stopPropagation();
-  headerInput.classList.add("active");
+    e.stopPropagation();
+    headerInput.classList.add("active");
 };
-
-
-
