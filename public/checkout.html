@@ -177,75 +177,56 @@
                     </div>
                 </form>
             </div>
-            <div class="checkout-receipt">
+
+
+            <!-- RECEIPT  -->
+            <form class="checkout-receipt" action="" method="post">
                 <h3 class="form-checkout__heading">Your Order</h3>
-                <div class="checkout-receipt__info">
-                    <p class="checkout-receipt__info-title">Product</p>
-                    <p class="checkout-receipt__info-title">Total</p>
-                </div>
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                        <td>Balmore King Size Bed, Whitewash Boucle & Black</td>
+                        <td class="quantity">02</td>
+                        <td>$598</td>
+                    </tr>
 
-                <div class="checkout-receipt__info">
-                    <p class="checkout-receipt__info-title">Balmore King Size Bed, Whitewash Boucle & Black</p>
-                    <p class="checkout-receipt__info-quantity">
-                        x
-                        <span class="checkout-receipt__info-quantity-special">02</span>
-                    </p>
-                    <p class="checkout-receipt__info-price">200</p>
-                </div>
+                    <tr>
+                        <td>Balmore King Size Bed, Whitewash Boucle & Black</td>
+                        <td class="quantity">02</td>
+                        <td>$598</td>
+                    </tr>
 
-                <div class="checkout-receipt__info">
-                    <p class="checkout-receipt__info-title">Balmore King Size Bed, Whitewash Boucle & Black</p>
-                    <p class="checkout-receipt__info-quantity">
-                        x
-                        <span class="checkout-receipt__info-quantity-special">02</span>
-                    </p>
-                    <p class="checkout-receipt__info-price">300</p>
-                </div>
-                <div class="checkout-receipt__info">
-                    <p class="checkout-receipt__info-title">Product</p>
-                    <p class="checkout-receipt__info-quantity">
-                        x
-                        <span class="checkout-receipt__info-quantity-special">02</span>
-                    </p>
-                    <p class="checkout-receipt__info-price">300</p>
-                </div>
-                <div class="checkout-receipt__info">
-                    <p class="checkout-receipt__info-title">Product</p>
-                    <p class="checkout-receipt__info-quantity">
-                        x
-                        <span class="checkout-receipt__info-quantity-special">02</span>
-                    </p>
-                    <p class="checkout-receipt__info-price">300</p>
-                </div>
-                <div class="checkout-receipt__info">
-                    <p class="checkout-receipt__info-title">Product</p>
-                    <p class="checkout-receipt__info-quantity">
-                        x
-                        <span class="checkout-receipt__info-quantity-special">02</span>
-                    </p>
-                    <p class="checkout-receipt__info-price">300</p>
-                </div>
+                    <tr>
+                        <td>Balmore King Size Bed, Whitewash Boucle & Black</td>
+                        <td class="quantity">02</td>
+                        <td>$598</td>
+                    </tr>
 
-                <div class="checkout-receipt__info">
-                    <p class="checkout-receipt__info-title">SUBTOTAL</p>
-                    <p class="checkout-receipt__info-price">$124.26</p>
-                </div>
-
+                </table>
                 <div class="checkout-receipt__info-payment">
+                    <h3 class="checkout-receipt__info-payment--header">Payment Method </h3>
+
                     <div class="checkout-receipt__info-method-payment">
                         <input type="radio" checked value="cash" name="payment" id="payment-cash" />
-                        <label for="payment-cash">Cash</label>
+                        <label for="payment-cash" class="">Cash</label>
                     </div>
                     <div class="checkout-receipt__info-method-payment">
                         <input type="radio" value="Paypal" name="payment" id="payment-paypal" />
                         <label for="payment-paypal">Paypal</label>
                     </div>
                 </div>
-
                 <div class="checkout-receipt__btn">
-                    <button class="btn-checkout form-submit">Check Out</button>
+                    <button class="btn-checkout form-submit" type="submit">Check Out</button>
                 </div>
-            </div>
+            </form>
+            <!-- RECEIPT  -->
+
+
+
         </div>
 
         <footer id="footer">

@@ -17,10 +17,17 @@
         margin: auto;
         margin-top: 30px;
     }
+    .checkout-receipt h3.form-checkout__heading {
+        margin: 12px 35px;
+    }
+    .checkout-receipt__info-payment {
+        margin: 0 35px;
+    }
     .checkout-receipt__info-method-payment,
     .checkout-receipt__info-title,
     .checkout-receipt__info-quantity-special,
-    .checkout-receipt__info-price {
+    .checkout-receipt__info-price,
+    .checkout-receipt table tr td {
         font-size: 1.2rem;
     }
     .btn-checkout {
@@ -401,6 +408,7 @@
     /* END CART */
     /* START CHECKOUT */
     .checkout-form {
+        width: 85%;
         margin: auto;
         margin-top: 30px;
     }
