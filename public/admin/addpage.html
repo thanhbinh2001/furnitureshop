@@ -91,10 +91,10 @@
 
                         <!-- ui -->
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a class="nav-link">
                                 <i class="nav-icon far fa-circle text-danger"></i>
                                 <p>
-                                    Quản lý sản phẩm
+                                    Product Management
                                     <i class="fas fa-angle-left right"></i>
                                 </p>
                             </a>
@@ -102,34 +102,34 @@
                                 <li class="nav-item">
                                     <a href="product.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Sản phẩm</p>
+                                        <p>Product</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Chi Tiết Sản Phẩm</p>
+                                        <p>Product Details</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Hình Ảnh Sản Phẩm</p>
+                                        <p>Product Image</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Danh mục Sản Phẩm</p>
+                                        <p>Product Category</p>
                                     </a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a class="nav-link">
                                 <i class="nav-icon far fa-circle text-warning"></i>
                                 <p>
-                                    Quản lý khách hàng
+                                    Customer Management
                                     <i class="fas fa-angle-left right"></i>
                                 </p>
                             </a>
@@ -137,17 +137,17 @@
                                 <li class="nav-item">
                                     <a href="user.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Khách hàng</p>
+                                        <p>Customer</p>
                                     </a>
                                 </li>
 
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a class="nav-link">
                                 <i class="nav-icon far fa-circle text-info"></i>
                                 <p>
-                                    Quản lý đơn hàng
+                                    Order Management
                                     <i class="fas fa-angle-left right"></i>
                                 </p>
                             </a>
@@ -155,16 +155,15 @@
                                 <li class="nav-item">
                                     <a href="order.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Đơn hàng</p>
+                                        <p>Order</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="order-detail.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Chi Tiết Đơn hàng</p>
+                                        <p>Order Details</p>
                                     </a>
                                 </li>
-
                             </ul>
                         </li>
 
@@ -183,61 +182,62 @@
                     <div class="card-header">
                         <div class="row">
                             <div class="col-md-6">
-                                <strong class="text-danger text-uppercase">Thêm Sản Phẩm</strong>
+                                <strong class="text-danger text-uppercase">Add product</strong>
                             </div>
                             <div class="col-md-6 text-right">
                                 <button type="submit" name="create" class="btn btn-sm btn-success"><i
-                                        class="fas fa-save"></i> Lưu </button>
-                                <a href="product.html" class="btn btn-sm btn-info"><i class="fas fa-long-arrow-alt-left"></i> Về
-                                    danh sách </a>
+                                        class="fas fa-save"></i> Save </button>
+                                <a href="product.html" class="btn btn-sm btn-info"><i class="fas fa-long-arrow-alt-left"></i> Back </a>
                             </div>
                         </div>
                     </div>
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="form-group row">
-                                    <label class="col-md-2">Mã sản phẩm <span class="text-danger">(*)</span></label>
-                                    <input type="text" name="" id="" class="col-md-10">
+                        <form action="" method="post">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group row">
+                                        <label class="col-md-2">ID Product <span class="text-danger">(*)</span></label>
+                                        <input type="text" name="" id="" class="col-md-10">
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-2">Name Product <span class="text-danger">(*)</span></label>
+                                        <input type="text" name="" id="" class="col-md-10">
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-2">Price <span class="text-danger">(*)</span></label>
+                                        <input type="text" name="" id="" class="col-md-10">
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-2">Rate<span class="text-danger">(*)</span></label>
+                                        <input type="text" name="" id="" class="col-md-10">
+                                    </div>
                                 </div>
-                                <div class="form-group row">
-                                    <label class="col-md-2">Tên sản phẩm <span class="text-danger">(*)</span></label>
-                                    <input type="text" name="" id="" class="col-md-10">
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-2">Giá <span class="text-danger">(*)</span></label>
-                                    <input type="text" name="" id="" class="col-md-10">
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-2">Giảm giá <span class="text-danger">(*)</span></label>
-                                    <input type="text" name="" id="" class="col-md-10">
+                                <div class="col-md-4">
+                                    <div class="form-group row">
+                                        <label class="col-md-4">ID Category <span class="text-danger">(*)</span></label>
+                                        <select class="col-md-8">
+                                            <option value="">KC</option>
+                                            <option value="">LV</option>
+                                            <option value="">BR</option>
+                                            <option value="">CT</option>
+                                            <option value="">DC</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-4">Quantity Stock <span class="text-danger">(*)</span></label>
+                                        <input type="number" name="" id="" class="col-md-8">
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-4">Quantity Import <span class="text-danger">(*)</span></label>
+                                        <input type="number" name="" id="" class="col-md-8">
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-4">Date Import<span class="text-danger">(*)</span></label>
+                                        <input type="date" name="" id="" class="col-md-8">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="form-group row">
-                                    <label class="col-md-2">Mã loại <span class="text-danger">(*)</span></label>
-                                    <select class="col-md-10">
-                                        <option value="">KC</option>
-                                        <option value="">LV</option>
-                                        <option value="">BR</option>
-                                        <option value="">CT</option>
-                                        <option value="">DC</option>
-                                    </select>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-2">SL tồn <span class="text-danger">(*)</span></label>
-                                    <input type="number" name="" id="" class="col-md-10">
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-2">SL nhập <span class="text-danger">(*)</span></label>
-                                    <input type="number" name="" id="" class="col-md-10">
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-2">Ngày nhập<span class="text-danger">(*)</span></label>
-                                    <input type="date" name="" id="" class="col-md-10">
-                                </div>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                     <!-- /.card-body -->
 
