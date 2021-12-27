@@ -60,7 +60,6 @@
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    border-top: 1px solid black;
 }
 
 .cart-sub__heading,

@@ -22,6 +22,16 @@
     <link rel="stylesheet" href="./assets/css/cart.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link href="./admin/assets/dist/css/adminlte.min.css" rel="stylesheet" />
+
+    <style>
+        body {
+            font-size: 1.5rem;
+            font-family: "Poppins", sans-serif;
+            line-height: 1.6;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -152,158 +162,118 @@
         <!-- breadcrumb end -->
 
 
-        <!-- container-cart -->
-        <div class="container-cart">
-            <div class="table-cart">
-                <table>
-                    <tr>
-                        <div class="cart-headeing">
-                            <th>
-                                <h4 class="table-cart__heading-col">Product</h4>
-                            </th>
-                            <th>
-                                <h4 class="table-cart__heading-col">Price</h4>
-                            </th>
-                            <th>
-                                <h4 class="table-cart__heading-col">Quantity</h4>
-                            </th>
-                            <th>
-                                <h4 class="table-cart__heading-col">Total</h4>
-                            </th>
+        <div class="content-wrapper grid wide" style="margin-left: auto; background-color: #fff;">
+            <!-- Main content -->
+            <section class="content my-3">
+                <!-- Default box -->
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table table-bordered table-striped" id="myTable">
+                            <thead>
+                                <tr>
+                                    <th class="text-center" colspan="2">Product</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                    <th class="text-center">Xóa</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- data -->
+                                <tr>
+                                    <td><img src="./assets/images/feature_1.png" alt="" width="50px"></td>
+                                    <td>Balmore King Size Bed, Whitewash Boucle & Black</td>
+                                    <td>$699</td>
+                                    <td><input type="number" value="1" min="1" max="100"></td>
+                                    <td>$699</td>
+                                    <td class="text-center">
+                                        <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./assets/images/feature_1.png" alt="" width="50px"></td>
+                                    <td>Balmore King Size Bed, Whitewash Boucle & Black</td>
+                                    <td>$699</td>
+                                    <td><input type="number" value="1" min="1" max="100"></td>
+                                    <td>$699</td>
+                                    <td class="text-center">
+                                        <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i>
+                                        </a>
 
-                        </div>
-                    </tr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./assets/images/feature_1.png" alt="" width="50px"></td>
+                                    <td>Balmore King Size Bed, Whitewash Boucle & Black</td>
+                                    <td>$699</td>
+                                    <td><input type="number" value="1" min="1" max="100"></td>
+                                    <td>$699</td>
+                                    <td class="text-center">
+                                        <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i>
+                                        </a>
 
-                    <tr>
-                        <td class="table-cart__product-info">
-                            <div class="table-cart__product-info__img">
-                                <img src="./assets/images/feature_1.png" alt="" />
-                            </div>
-                            <p class="table-cart__product-info__name">
-                                Minimalistic shop for multipurpose use Minimalistic shop for multipurpose use
-                            </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./assets/images/feature_1.png" alt="" width="50px"></td>
+                                    <td>Balmore King Size Bed, Whitewash Boucle & Black</td>
+                                    <td>$699</td>
+                                    <td><input type="number" value="1" min="1" max="100"></td>
+                                    <td>$699</td>
+                                    <td class="text-center">
+                                        <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i>
+                                        </a>
 
-                        </td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./assets/images/feature_1.png" alt="" width="50px"></td>
+                                    <td>Balmore King Size Bed, Whitewash Boucle & Black</td>
+                                    <td>$699</td>
+                                    <td><input type="number" value="1" min="1" max="100"></td>
+                                    <td>$699</td>
+                                    <td class="text-center">
+                                        <a href="#" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i>
+                                        </a>
 
-                        <td class="table-cart__product-info__price">$123</td>
-                        <td class="table-cart__product-info__quantity">
-                            <input type="number" value="1" min="1" max="100" />
-                        </td>
-                        <td class="table-cart__product-info__total">$594</td>
-                        <td class="table-cart__product-info__remove">
-                            <i class="fas fa-times"></i>
-                        </td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <h4 class="cart-sub__heading">Subtotal</h4>
+                                    </td>
+                                    <td>
+                                        <h4 class="cart-sub__price">$52.314</h4>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-                    </tr>
-                    <tr>
-                        <td class="table-cart__product-info">
-                            <div class="table-cart__product-info__img">
-                                <img src="./assets/images/feature_2.png" alt="" />
-                            </div>
-                            <p class="table-cart__product-info__name">
-                                Minimalistic shop for multipurpose use Minimalistic shop for multipurpose use Minimalistic shop for multipurpose use
-                            </p>
-                        </td>
+                    </div>
+                    <!-- /.card-body -->
 
-                        <td class="table-cart__product-info__price">$123456.789</td>
-                        <td class="table-cart__product-info__quantity">
-                            <input type="number" value="1" min="1" max="100" />
-                        </td>
-                        <td class="table-cart__product-info__total">$594</td>
-                        <td class="table-cart__product-info__remove">
-                            <i class="fas fa-times"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="table-cart__product-info">
-                            <div class="table-cart__product-info__img">
-                                <img src="./assets/images/feature_3.png" alt="" />
-                            </div>
-                            <p class="table-cart__product-info__name">
-                                Minimalistic shop for multipurpose use Minimalistic shop for multipurpose use Minimalistic shop for multipurpose use
-                            </p>
-                        </td>
-
-                        <td class="table-cart__product-info__price">$123</td>
-                        <td class="table-cart__product-info__quantity">
-                            <input type="number" value="1" min="1" max="100" />
-                        </td>
-                        <td class="table-cart__product-info__total">$594</td>
-                        <td class="table-cart__product-info__remove">
-                            <i class="fas fa-times"></i>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="table-cart__product-info">
-                            <div class="table-cart__product-info__img">
-                                <img src="./assets/images/feature_4.png" alt="" />
-                            </div>
-                            <p class="table-cart__product-info__name">
-                                Minimalistic shop for multipurpose use Minimalistic shop for multipurpose use Minimalistic shop for multipurpose use
-                            </p>
-                        </td>
-
-                        <td class="table-cart__product-info__price">$123456.789</td>
-                        <td class="table-cart__product-info__quantity">
-                            <input type="number" value="1" min="1" max="100" />
-                        </td>
-                        <td class="table-cart__product-info__total">$594</td>
-                        <td class="table-cart__product-info__remove">
-                            <i class="fas fa-times"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="table-cart__product-info">
-                            <div class="table-cart__product-info__img">
-                                <img src="./assets/images/feature_1.png" alt="" />
-                            </div>
-                            <p class="table-cart__product-info__name">
-                                Minimalistic shop for multipurpose use Minimalistic shop for multipurpose use Minimalistic shop for multipurpose use
-                            </p>
-                        </td>
-
-                        <td class="table-cart__product-info__price">$123456.789</td>
-                        <td class="table-cart__product-info__quantity">
-                            <input type="number" value="1" min="1" max="100" />
-                        </td>
-                        <td class="table-cart__product-info__total">$594</td>
-                        <td class="table-cart__product-info__remove">
-                            <i class="fas fa-times"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="table-cart__product-info">
-                            <div class="table-cart__product-info__img">
-                                <img src="./assets/images/feature_2.png" alt="" />
-                            </div>
-                            <p class="table-cart__product-info__name">
-                                Minimalistic shop for multipurpose use Minimalistic shop for multipurpose use Minimalistic shop for multipurpose use
-                            </p>
-                        </td>
-
-                        <td class="table-cart__product-info__price">$123456.789</td>
-                        <td class="table-cart__product-info__quantity">
-                            <input type="number" value="1" min="1" max="100" />
-                        </td>
-                        <td class="table-cart__product-info__total">$594</td>
-                        <td class="table-cart__product-info__remove">
-                            <i class="fas fa-times"></i>
-                        </td>
-                    </tr>
-                </table>
-                <div class="cart-sub">
-                    <h4 class="cart-sub__heading">Subtotal</h4>
-                    <h4 class="cart-sub__price">$52.314</h4>
                 </div>
-                <div class="cart-btn">
-                    <button class="btn-continue-shopping"><a href="./product.html">Continue Shopping</a></button>
-                    <button class="btn-to-checkout"><a href="./checkout.html">Proceed To Checkout</a></button>
-                </div>
+                <!-- /.card -->
+
+            </section>
+
+            <!-- <div class="cart-sub">
+                <h4 class="cart-sub__heading">Subtotal</h4>
+                <h4 class="cart-sub__price">$52.314</h4>
+            </div> -->
+            <div class="cart-btn">
+                <button class="btn-continue-shopping"><a href="./product.html">Continue Shopping</a></button>
+                <button class="btn-to-checkout"><a href="./checkout.html">Proceed To Checkout</a></button>
             </div>
+            <!-- /.content -->
         </div>
 
-        <footer id="footer">
+        <footer id="footer" style="padding-top: 0;">
             <div class="grid wide">
                 <div class="footer-wrapper">
                     <div class="col l-2 m-6 c-12 ">
@@ -395,7 +365,8 @@
                 <div class="footer-wrapper footer-copyright">
                     <div class="col l-8">
                         <p>
-                            Copyright © 2021 All rights reserved | This template is made with by <a href="./index.html">BBC Furniture Store</a>
+                            Copyright © 2021 All rights reserved | This template is made with by <a href="./index.html">BBC
+                                Furniture Store</a>
                         </p>
                     </div>
                     <div class="col l-4">
@@ -428,6 +399,18 @@
     </div>
 
     <script src="./assets/js/header.js"></script>
+    <!-- jQuery -->
+    <script src="./admin/assets/plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="/admin/assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- Bootstrap 4 -->
+    <script src="./admin/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="./admin/assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="./admin/assets/dist/js/adminlte.min.js"></script>
+    <script src="./admin/assets/dist/js/demo.js"></script>
 </body>
 
 </html>
