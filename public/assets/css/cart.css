@@ -97,3 +97,8 @@
 .btn-to-checkout {
     margin: 20px 20px 20px 0;
 }
+
+.btn-continue-shopping a:hover,
+.btn-to-checkout a:hover {
+    color: var(--white-color);
+}
