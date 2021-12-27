@@ -167,8 +167,13 @@
                                     <div class="col l-12 m-12 c-12 form-group p_star">
                                         <input type="email" class="form-control" id="email" name="email" value="" placeholder="Email" required>
                                     </div>
-                                    <div class="col l-12 m-12 c-12 form-group p_star">
+                                    <div class="col l-12 m-12 c-12 form-group p_star form-show">
                                         <input type="password" class="form-control" id="password" name="password" value="" placeholder="Password" required>
+                                        <div class="show-icon">
+                                            <span class="show-password active"><i class="far fa-eye"></i></span>
+                                            <span class="show-password no-active"><i
+                                                    class="far fa-eye-slash"></i></span>
+                                        </div>
                                     </div>
                                     <div class="col l-12 m-12 c-12 form-group">
                                         <div class="creat_account d-flex align-items-center">
@@ -318,6 +323,18 @@
     <script src="./assets/js/header.js"></script>
     <script src="./assets/js/validate.js"></script>
 
+    <script>
+        $(".show-password.no-active").onclick = function() {
+            $(".show-password.no-active").style.display = "none";
+            $(".show-password.active").style.display = "block";
+            $(".show-password.active").parentNode.previousElementSibling.type = "text"
+        }
+        $(".show-password.active").onclick = function() {
+            $(".show-password.active").style.display = "none";
+            $(".show-password.no-active").style.display = "block";
+            $(".show-password.active").parentNode.previousElementSibling.type = "password"
+        }
+    </script>
 </body>
 
 </html>

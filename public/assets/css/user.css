@@ -99,3 +99,26 @@
     display: block;
     float: right;
 }
+
+.form-show {
+    position: relative;
+}
+
+.show-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.show-password {
+    display: none;
+    color: #000;
+    font-size: 1.4rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.show-password.no-active {
+    display: block;
+}
