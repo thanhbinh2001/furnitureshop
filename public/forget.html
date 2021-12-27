@@ -163,15 +163,32 @@
                         <div class="login_part_form">
                             <div class="login_part_form_iner">
                                 <h3>Welcome BBC Furniture ! <br> Please Fill In The Information.</h3>
-                                <form class="row contact_form" action="#" method="post">
-                                    <div class="col l-12 m-12 c-12 form-group p_star">
-                                        <input type="text" class="form-control" id="username" name="username" value="" placeholder="Full Name" required>
-                                    </div>
+                                <form class="row send_email" action="#" method="#">
                                     <div class="col l-12 m-12 c-12 form-group p_star">
                                         <input type="email" class="form-control" id="email" name="email" value="" placeholder="Email " required>
                                     </div>
+
+                                    <div class="col l-12 m-12 c-12 form-group">
+                                        <button type="submit" value="submit" class="btn_3 form-submit form-continue">
+                                            continue
+                                        </button>
+                                        <a class="lost_pass" href="./register.html">Register Account</a>
+                                        <a class="register_account" href="./login.html">Login Account</a>
+                                    </div>
+                                </form>
+
+                                <form action="" class="reset_password">
+                                    <h3 class="p_star">Verification code sent via email</h3>
                                     <div class="col l-12 m-12 c-12 form-group p_star">
-                                        <input type="password" class="form-control" id="password" name="password" value="" placeholder="Enter the most recent password" required>
+                                        <input type="text" class="form-control" id="code" name="code" value="" placeholder="Enter Code" required>
+                                    </div>
+                                    <div class="col l-12 m-12 c-12 form-group p_star">
+                                        <input type="password" class="form-control" id="password" name="password" value="" placeholder="Password" required>
+                                        <span class="form-message">Password có độ dài tối thiểu là 6</span>
+                                    </div>
+                                    <div class="col l-12 m-12 c-12 form-group p_star">
+                                        <input type="password" class="form-control" id="confir-password" name="confir-password" value="" placeholder="Confirm Password" required>
+                                        <span class="form-message">Password không khớp</span>
                                     </div>
 
                                     <div class="col l-12 m-12 c-12 form-group">
@@ -182,6 +199,7 @@
                                         <a class="register_account" href="./login.html">Login Account</a>
                                     </div>
                                 </form>
+
                             </div>
                         </div>
                     </div>
@@ -318,6 +336,14 @@
     <script src="./assets/js/header.js"></script>
     <script src="./assets/js/validate.js"></script>
 
+    <script>
+        $(".reset_password").style.display = 'none';
+        $(".form-continue").onclick = function(e) {
+            e.preventDefault();
+            $(".send_email").style.display = "none";
+            $(".reset_password").style.display = 'block';
+        }
+    </script>
 </body>
 
 </html>
